@@ -3,14 +3,11 @@
 
 #if defined(__cplusplus)
 extern "C" {
-#	define PATCH_RANDOM_NEEDS_THROW throw()
 #else
-#	define PATCH_RANDOM_NEEDS_THROW
 #endif
 
-
-void srand(unsigned int seed) PATCH_RANDOM_NEEDS_THROW ;
-int rand() PATCH_RANDOM_NEEDS_THROW ;
+void srand(unsigned int seed) throw ();
+int rand() throw ();
 
 #if defined(__cplusplus)
 }
