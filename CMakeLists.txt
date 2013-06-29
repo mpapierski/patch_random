@@ -1,0 +1,16 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+PROJECT (patch_random)
+
+FIND_PACKAGE (Boost REQUIRED COMPONENTS
+	random
+)
+
+INCLUDE_DIRECTORIES (
+	include/
+)
+
+ADD_LIBRARY (patch_random
+	src/patch_random.cpp)
+
+ENABLE_TESTING ()
+ADD_SUBDIRECTORY (tests)
