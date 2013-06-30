@@ -1,7 +1,9 @@
 patch_random
 ===============
 
-This library allows you to replace original `void srand(unsigned int)` and `int rand()`. As the name suggest the original `srand` and `rand` functions from standard library is patched at the link time with a *Mersenne Twister* pseudo-random number generator!
+This library allows you to replace original `void srand(unsigned int)` and `int rand()`. As the name suggest the original `srand` and `rand` functions from standard library are patched at the link time with a *Mersenne Twister* pseudo-random number generator!
+
+No code change required. Just link your app to this library and your app will be producing *better* pseudorandom numbers!
 
 Example
 -------
